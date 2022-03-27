@@ -38,55 +38,55 @@ const ProjectList = ({ category }) => {
     },
     {
       name: 'E-commerce Back End',
-      category: 'portraits',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Employee Tracker',
-      category: 'portraits',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Note Taker',
-      category: 'portraits',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Team Profile Generator',
-      category: 'portraits',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Professional README Generator',
-      category: 'food',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Weather Dashboard',
-      category: 'food',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Work Day Scheduler',
-      category: 'food',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Code Quiz',
-      category: 'food',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Password Generator',
-      category: 'food',
+      category: 'project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     }
@@ -105,7 +105,7 @@ const ProjectList = ({ category }) => {
         <Modal onClose={toggleModal} currentProject={currentProject} />
       )}
       <div className="flex-row">
-        {currentProjects.map((image, i) => (
+        {/* {currentProjects.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
@@ -113,7 +113,7 @@ const ProjectList = ({ category }) => {
             onClick={() => toggleModal(image, i)}
             key={image.name}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );
