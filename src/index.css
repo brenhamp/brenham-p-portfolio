@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 a {
   color: var(--tertiary);
@@ -7,28 +7,26 @@ a {
   font-weight: bold;
 }
 
-
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
 
 :root {
-
   --primary: #423e3bff;
   --light: #e3e4dbff;
   --secondary: #07004dff;
   --tertiary: #7699d4ff;
   --mountbatten-pink: #94849bff;
-  --black: #000000;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   min-height: 100%;
 }
 
@@ -38,14 +36,16 @@ body {
   line-height: 1.5;
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background: var(--tertiary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,h2,h3 { 
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -85,9 +85,8 @@ p {
   margin-top: 0;
 }
 
-
 header {
-  background: var(--black);
+  background: var(--primary);
 }
 
 header a {
@@ -98,7 +97,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -107,12 +106,12 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -130,7 +129,7 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--primary);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -138,7 +137,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 li {
@@ -146,19 +145,19 @@ li {
 }
 
 .nav-font {
-  font-family: 'Poppins' ;
+  font-family: "Poppins";
   color: var(--tertiary);
   text-decoration: none;
   font-size: 1.5em;
 }
 
 .nav-title-font {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 1.9em;
 }
 
 .top-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-top: 20px;
 }
 
@@ -170,24 +169,24 @@ li {
   background-color: var(--primary);
 }
 
-.navbar-nav > li{
-  margin-left:30px;
-  margin-right:30px;
+.navbar-nav > li {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
 }
 
 .container {
@@ -199,11 +198,10 @@ textarea {
 
 #contact-form {
   align-items: center;
-display: block;
+  display: block;
   justify-content: center;
   padding-left: 3rem;
   margin: 1px;
-
 }
 
 .contact-form {
@@ -227,8 +225,6 @@ display: block;
   justify-content: flex-end;
 }
 
-
-
 .wrapper {
   padding-top: 50px;
   justify-content: space-around;
@@ -241,13 +237,13 @@ display: block;
 }
 
 .card {
-  background-color: var(--white);
+  background-color: var(--light);
   border-radius: 5px;
   height: 400px;
   margin: 2rem;
   position: relative;
   width: 400px;
-  box-shadow: 0 2px 2px var(--black), 0 6px 12px var(--black);
+  box-shadow: 0 2px 2px var(--primary), 0 6px 12px var(--primary);
 }
 
 .card .img-container {
@@ -255,60 +251,57 @@ display: block;
   overflow: hidden;
   text-align: center;
   border-radius: 10px;
-  background-color: var(--white);
+  background-color: var(--light);
 }
 
 .card .img-container img {
   width: 100%;
   padding: 25px;
   margin-bottom: 20px;
-  background-color: var(--white);
+  background-color: var(--light);
 }
 
 .card .content {
   font-size: 18px;
-  background-color: var(--white);
-  color: var(--cadet-blue);
+  background-color: var(--light);
   font-weight: bold;
   text-align: center;
 }
 
-.card-title{
+.card-title {
   margin-top: 10px;
-  color: var(--eerie-black);
 }
 
 .project-title {
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--primary);
+  background-color: var(--light);
 }
 
 .project-icons-container {
-  background-color: var(--white);
+  background-color: var(--light);
 }
 
 .project-icon {
-  background-color: var(--white);
+  background-color: var(--light);
   padding: 5px;
 }
 
 .topics {
   font-size: small;
   font-style: italic;
-  color: var(--black);
-  background-color: var(--white)
+  color: var(--primary);
+  background-color: var(--light);
 }
 
-.footer { 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-} 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .icon {
   padding: 10px;
 }
-
 
 .img-thumbnail {
   width: auto;
@@ -318,51 +311,50 @@ display: block;
 }
 
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .modalContainer {
-	background: var(--blacker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
+  background: var(--primary);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  width: 960px;
 }
 
 .modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
 button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
+  background: var(--primary);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .navActive {
