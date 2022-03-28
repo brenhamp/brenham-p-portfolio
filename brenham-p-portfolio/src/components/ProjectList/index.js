@@ -2,6 +2,7 @@
 import React from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Individual Cards 
 function ProjectList(props) {
     return (
       <div className="card"> 
@@ -10,9 +11,11 @@ function ProjectList(props) {
         </div>
         <div className="content">
               <p className="card-title">{props.name}</p>
-              <p class="project-icons">
-              <a href={props.github}><img class="project-icon" src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub Repository" /></a> 
-              <a href={props.deploy}><img class="project-icon" src="https://img.icons8.com/ios/344/web.png" alt="Deployed Application" /></a> 
+              <p className="project-icons">
+
+              <a href={props.repository}><img class="project-icon" src="https://img.icons8.com/glyph-neue/128/github.png" alt="GitHub Repo" /> </a> 
+
+              <a href={props.deployment}><img class="project-icon" src="https://img.icons8.com/external-prettycons-flat-prettycons/94/external-web-web-and-seo-prettycons-flat-prettycons.png" alt="Live Application" /></a> 
        
              
              </p>

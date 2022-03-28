@@ -19,10 +19,10 @@ class Header extends Component {
 
         <div className="content"><Routes>
           <Route exact path="/" render={() => <Navigate to="/about" />} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact}/>
-          <Route path="/resume" component={Resume}/>
+          <Route path="/about" element={<About/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/resume" element={<Resume/>}/>
        </Routes> </div>
       </BrowserRouter>
     );

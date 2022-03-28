@@ -4,8 +4,8 @@ import profileImage from '../../assets/profile/profile-image.jpg';
 function About() {
     return (
         <section className="container">
-        <h1 id="about">Brenham Pozzi</h1>
-        <img src={profileImage} className="my-2" style={{ }} alt="Me" />
+        <h1 id="about">About Me</h1>
+        <img src={profileImage} className="profile-image" alt="Me" />
         <div>
           <p>
             Trinity University Class of 2016 graduate in Business. Now an amateur dev through UTSA/Trilogy coding boot camp.
