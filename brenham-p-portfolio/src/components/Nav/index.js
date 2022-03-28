@@ -1,56 +1,41 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+
+import React from "react";
+import { Navbar } from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 🖥️</span> My Portfolio
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
+    <div>
+      <Navbar expand="lg" bg="dark" sticky="top">
+        <NavLink className="nav-link" to="/">
+          <div className="text-light">
+            <h4 className="nav-title-font">Brenham Pozzi</h4>
+          </div>
+        </NavLink>
+        <ul className="navbar-nav ml-auto navitem-indent">
+          <li className="nav-item">
+            <NavLink to="/about">
+              <div className="nav-font text-light">About Me</div>
+            </NavLink>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className="nav-item">
+            <NavLink to="/portfolio">
+              <div className="nav-font text-light">Portfolio</div>
+            </NavLink>
           </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
+          <li className="nav-item">
+            <NavLink to="/contact">
+              <div className="nav-font text-light">Contact</div>
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/resume">
+              <div className="nav-font text-light">Resume</div>
+            </NavLink>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </Navbar>
+    </div>
   );
 }
 
