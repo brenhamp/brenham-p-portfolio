@@ -8,13 +8,13 @@ const ProjectList = ({ category }) => {
   const [projects] = useState([
     {
       name: 'One Stop Shop',
-      category: 'project',
+      category: 'group-project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'MyAnimeFinder',
-      category: 'project',
+      category: 'group-project',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
@@ -61,12 +61,6 @@ const ProjectList = ({ category }) => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
-      name: 'Professional README Generator',
-      category: 'project',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
       name: 'Weather Dashboard',
       category: 'project',
       description:
@@ -105,7 +99,7 @@ const ProjectList = ({ category }) => {
         <Modal onClose={toggleModal} currentProject={currentProject} />
       )}
       <div className="flex-row">
-        {/* {currentProjects.map((image, i) => (
+        {currentProjects.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
@@ -113,7 +107,7 @@ const ProjectList = ({ category }) => {
             onClick={() => toggleModal(image, i)}
             key={image.name}
           />
-        ))} */}
+        ))}
       </div>
     </div>
   );

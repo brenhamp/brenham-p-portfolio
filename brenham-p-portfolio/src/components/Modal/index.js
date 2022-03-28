@@ -7,10 +7,10 @@ const Modal = ({ onClose, currentProject }) => {
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
-        {/* <img
+        <img
           src={require(`../../assets/large/${category}/${index}.jpg`).default}
           alt="current category"
-        /> */}
+        />
         <p>{description}</p>
         <button type="button" onClick={onClose}>
           Close this modal
