@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/brenham-p-portfolio/static/css/main.dcfaaf2e.css",
+    "main.js": "/brenham-p-portfolio/static/js/main.33a6527a.js",
+    "static/js/787.b0548e39.chunk.js": "/brenham-p-portfolio/static/js/787.b0548e39.chunk.js",
+    "static/media/profile-image.jpg": "/brenham-p-portfolio/static/media/profile-image.9c46af4ec28d78873b76.jpg",
+    "index.html": "/brenham-p-portfolio/index.html",
+    "main.dcfaaf2e.css.map": "/brenham-p-portfolio/static/css/main.dcfaaf2e.css.map",
+    "main.33a6527a.js.map": "/brenham-p-portfolio/static/js/main.33a6527a.js.map",
+    "787.b0548e39.chunk.js.map": "/brenham-p-portfolio/static/js/787.b0548e39.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcfaaf2e.css",
+    "static/js/main.33a6527a.js"
+  ]
+}
